@@ -45,7 +45,7 @@ export class BoardSettingsComponent implements OnInit {
       publicBoard: boardForm.form.controls['publicBoard'].value
     } );
 
-    this.notiflixService.showLoading('Creating Board. Plase wait...');
+    this.notiflixService.showLoading('Creating Board. Please wait...');
 
     //Creates spotify API token
 
