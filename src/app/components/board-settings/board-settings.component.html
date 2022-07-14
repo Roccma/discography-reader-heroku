@@ -1,0 +1,46 @@
+<div class="card mt-4 mb-3">
+    <form (ngSubmit) = "onCreateBoard(boardForm)" #boardForm = "ngForm">
+        <div class="card-header">
+            <h5 class = "mt-2 card-title">Board's Settings</h5>
+            <button type = "submit" class = "btn btn-outline-success card-header-button">
+              Create board
+            </button>
+          </div>
+          <div class="card-body">
+              <b>Name <span class="mandatory-field">*</span></b>
+              <input 
+                  type = "text"
+                  class = "form-control"
+                  placeholder="Insert the name here"
+                  [value] = "boardSettings.name"
+                  [ngModel] = "boardSettings.name"
+                  name = "name"
+                  required/>
+              <br>
+              <b>Artist <span class="mandatory-field">*</span></b>
+              <input 
+                  type = "text"
+                  class = "form-control"
+                  placeholder="Insert the artist here"
+                  [value] = "boardSettings.artist"
+                  [ngModel] = "boardSettings.artist"
+                  name = "artist"
+                  required />
+              <small>This data will be used to search the disks' cover art in Spotify</small>
+              <br>
+              <div class="form-check mt-4">
+                <input 
+                    class="form-check-input" 
+                    type="checkbox" 
+                    [value]="boardSettings.publicBoard" 
+                    [ngModel]="boardSettings.publicBoard" 
+                    name="publicBoard" >
+                <label class="form-check-label" 
+                        for="flexCheckChecked">
+                  <b>Public</b>
+                </label>
+              </div>
+        </div>
+    </form>
+    
+</div>

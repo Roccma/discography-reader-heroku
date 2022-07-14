@@ -1,0 +1,19 @@
+<div class="card mb-3 max-height-screen" >
+    <div class="card-header">
+      <h5>Data</h5>
+    </div>
+    <div class="card-body">
+      <table class = 'table table-striped'>
+        <thead>
+          <th>Year</th>
+          <th>Disk's name</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let disk of disks">
+            <td>{{ disk.year }}</td>
+            <td>{{ disk.name }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

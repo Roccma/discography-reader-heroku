@@ -1,0 +1,16 @@
+.mandatory-field{
+    color: red;
+}
+
+.card-title{
+    display: inline-block;
+}
+
+.card-header-button{
+    float: right;
+}
+
+.max-height-screen{
+    max-height: 87vh;
+    overflow: auto;
+}

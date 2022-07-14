@@ -1,0 +1,16 @@
+<div class="card mt-5 max-height-screen" >
+    <div class="card-header">
+        <h5 class = "mt-2 card-title">Result</h5>
+        <button class = "btn btn-outline-success card-header-button" (click) = "onOpenInTrello()">
+          Open in Trello
+        </button>
+    </div>
+    <div class="card-body">
+      <div style = "overflow-y: auto;">
+        <app-decade-list *ngFor = "let decade of decades"
+                        [decade] = "decade">
+
+        </app-decade-list>        
+      </div>
+    </div>
+</div>
