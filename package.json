@@ -1,5 +1,5 @@
 {
-  "name": "discography-reader",
+  "name": "discography-reader-heroku",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,6 +21,7 @@
     "@fortawesome/angular-fontawesome": "^0.11.1",
     "angular-cli-ghpages": "^0.1.0",
     "axios": "^0.27.2",
+    "express": "^4.18.1",
     "notiflix": "^3.2.5",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
